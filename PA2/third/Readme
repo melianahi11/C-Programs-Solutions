@@ -1,0 +1,47 @@
+From the second to third, you will notice that it has been simplified.
+In the basic way of summarizing, the second code is basically the human way of solving a sudoku puzzle. In which you would first put all the answers you know for sure, process of elimination, and then later on solve the rest. 
+Whereas for the third, it is recursively going through every number, brute-force searching, and branching off each one until it cancels out the options. 
+This change can be seen in both of the sudoku function parts of the code.
+in the second I have added new variables including possibility/ies, stuck, and unfinished.
+
+second.c
+//main sudoku grid
+//list of row/col pairs that are empty with state 0
+//total count of empty cells
+//total count of empty cells that have been filled
+//checks if a value n can be put into a row/col/3x3 square
+//checks for value in row
+//checks for value in col
+//checks for value in square
+//main sudoku driver
+//-1 if the entire grid had been passed through with no cell filled in during the pass
+//counts the number of possible values for a cell
+//keeps running until we are stuck
+//loop through the list of empty cells in unifinished[][]
+//loop through 1-9 to check possible values
+//if a valid value for cell, record and keep checking for more
+//if only one possible value, fill it in, mark row/col pair as finished, set to not stuck to continue looping
+//if all are completed, exit success
+//if we got stuck, exit failure
+//populate sudoku grid
+//prefill unfinished[] with -1
+//populate unfinished[] with row/col pairs
+//run sudoku and print out solution if successful
+
+third.c
+//main sudoku grid
+//list of row/col pairs that are empty with state 0
+//total count of empty cells
+//total count of empty cells that have been filled
+//checks if a value n can be put into a row/col/3x3 square
+//checks for value in row
+//checks for value in col
+//checks for value in square
+//main sudoku driver (recursive)
+//if finished, end this recursive iteration
+//loop through 1-9 to check possible values
+//if a valid value for the cell, set sudoku grid and continue this recursive branch
+//continue recursive branch, return 1 on full success
+//if failed, reset this cell backtracking all the way to initial state
+//populate sudoku grid
+etcetc
