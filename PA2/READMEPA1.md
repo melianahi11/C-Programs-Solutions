@@ -7,48 +7,48 @@ This repository contains a collection of C programs, each serving different purp
 ### Source File: `first.c`
 
 #### Build Instructions:
+```gcc -Wall -Werror -fsanitize=address first.c -o first```
 
-```bash
-gcc -Wall -Werror -fsanitize=address first.c -o first
-
-Clean Instructions:
+##### Clean Instructions:
 rm -rf first
 
-Description:
+###### Description:
 The first program reads numbers from a file and determines if each number is a prime or a twin prime.
 
-second
+## second
 
-Source File: second.c
+### Source File: second.c
 
-Build Instructions:
+#### Build Instructions:
 gcc -Wall -Werror -fsanitize=address second.c -o second
 
-Clean Instructions:
+##### Clean Instructions:
 rm -rf second
 
-Description:
+###### Description:
 The second program reads input data from a file and performs bitwise operations based on the input commands ("get", "comp", "set").
 
-third
-Source File: third.c
-Build Instructions:
+## third
+
+### Source File: third.c
+
+#### Build Instructions:
 gcc -Wall -Werror -fsanitize=address third.c -o third
 
-Clean Instructions:
+##### Clean Instructions:
 rm -rf third
 
-Description:
+###### Description:
 The third program calculates the parity and counts pairs of consecutive 1s in a binary representation of a given number.
 
-fourth
+## fourth
 Source File: fourth.c
 
-Build Instructions:
+### Build Instructions:
 gcc -Wall -Werror -fsanitize=address fourth.c -o fourth
 
-Clean Instructions:
+#### Clean Instructions:
 rm -rf fourth
 
-Description:
+##### Description:
 The fourth program reads commands and values from a file to manipulate a sorted linked list. It supports insertion and deletion operations.
